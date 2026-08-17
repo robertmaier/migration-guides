@@ -1,4 +1,4 @@
-# js-migration-guides
+# migration-guides
 
 A structured, machine-readable database of migration guides for JavaScript and Node.js packages — intended to be served to AI agents and tooling.
 
