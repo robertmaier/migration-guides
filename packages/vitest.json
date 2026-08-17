@@ -1,0 +1,29 @@
+{
+  "$schema": "../schema.json",
+  "package": "vitest",
+  "description": "A Vite-native testing framework with Jest-compatible API",
+  "ecosystem": "javascript",
+  "migrations": [
+    {
+      "from": "1.x",
+      "to": "2.0",
+      "title": "Migrating to Vitest 2.0",
+      "url": "https://v2.vitest.dev/guide/migration",
+      "breaking": true
+    },
+    {
+      "from": "2.x",
+      "to": "3.0",
+      "title": "Migrating to Vitest 3.0",
+      "url": "https://v3.vitest.dev/guide/migration",
+      "breaking": true
+    },
+    {
+      "from": "3.x",
+      "to": "4.0",
+      "title": "Migrating to Vitest 4.0",
+      "url": "https://vitest.dev/guide/migration.html",
+      "breaking": true
+    }
+  ]
+}

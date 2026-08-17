@@ -5,5 +5,11 @@
       "file": "packages/rspack.json",
       "ecosystem": "javascript"
     }
+    ,
+    {
+      "package": "vitest",
+      "file": "packages/vitest.json",
+      "ecosystem": "javascript"
+    }
   ]
 }
