@@ -57,13 +57,3 @@ Validate your file against the schema before submitting:
 ```bash
 npx ajv-cli validate -s schema.json -d "packages/*.json"
 ```
-
-## Usage as an agent tool
-
-An MCP server or HTTP endpoint can expose this data by:
-
-1. Serving `GET /index` → `index.json`
-2. Serving `GET /package/:name` → the matching `packages/<name>.json`
-3. Serving `GET /migrate?package=rspack&from=1.x&to=2.0` → the matching migration entry
-
-This repo acts as the static data layer; the server layer is separate.
