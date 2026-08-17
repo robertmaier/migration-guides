@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/YOUR_ORG/js-migration-guides/schema.json",
+  "$id": "https://github.com/robertmaier/js-migration-guides/schema.json",
   "title": "Package Migration Guide",
   "description": "Schema for a single package's migration guide entries",
   "type": "object",
