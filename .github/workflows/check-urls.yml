@@ -1,0 +1,12 @@
+name: Check URLs
+
+on:
+  pull_request:
+
+jobs:
+  check-urls:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify all migration guide URLs are reachable
+        run: bash scripts/check-urls.sh
