@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/YOUR_ORG/js-migration-guides/schema.json",
+  "title": "Package Migration Guide",
+  "description": "Schema for a single package's migration guide entries",
+  "type": "object",
+  "required": ["package", "ecosystem", "migrations"],
+  "additionalProperties": false,
+  "properties": {
+    "package": {
+      "type": "string",
+      "description": "npm package name (e.g. rspack, webpack, eslint)"
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description of the package"
+    },
+    "ecosystem": {
+      "type": "string",
+      "enum": ["javascript", "node", "typescript"],
+      "description": "Primary ecosystem this package belongs to"
+    },
+    "migrations": {
+      "type": "array",
+      "description": "Ordered list of migration guides, oldest-first",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/migration"
+      }
+    }
+  },
+  "$defs": {
+    "migration": {
+      "type": "object",
+      "required": ["from", "to", "url"],
+      "additionalProperties": false,
+      "properties": {
+        "from": {
+          "type": "string",
+          "description": "Source version or range (semver range, 'x.y', or a package name for cross-package migrations)"
+        },
+        "to": {
+          "type": "string",
+          "description": "Target version or range (semver range or 'x.y')"
+        },
+        "title": {
+          "type": "string",
+          "description": "Human-readable title for the migration guide"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to the official migration guide"
+        },
+        "notes": {
+          "type": "string",
+          "description": "Optional short note about the scope or difficulty of the migration"
+        },
+        "breaking": {
+          "type": "boolean",
+          "description": "Whether this migration contains breaking changes (defaults to true for major bumps)"
+        }
+      }
+    }
+  }
+}

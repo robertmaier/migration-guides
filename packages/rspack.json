@@ -1,0 +1,22 @@
+{
+  "$schema": "../schema.json",
+  "package": "@rspack/core",
+  "description": "A fast Rust-based web bundler, API-compatible with webpack",
+  "ecosystem": "javascript",
+  "migrations": [
+    {
+      "from": "0.x",
+      "to": "1.0",
+      "title": "Upgrading from 0.x to v1",
+      "url": "https://rspack.rs/guide/migration/rspack_0.x",
+      "breaking": true
+    },
+    {
+      "from": "1.x",
+      "to": "2.0",
+      "title": "Upgrading from v1 to v2",
+      "url": "https://rspack.rs/guide/migration/rspack_1.x",
+      "breaking": true
+    }
+  ]
+}

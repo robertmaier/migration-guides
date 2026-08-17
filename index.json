@@ -1,0 +1,9 @@
+{
+  "packages": [
+    {
+      "package": "@rspack/core",
+      "file": "packages/rspack.json",
+      "ecosystem": "javascript"
+    }
+  ]
+}
